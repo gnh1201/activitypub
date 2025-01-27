@@ -1,4 +1,4 @@
-# topic-activitypub
+# gnh1201/activitypub
 My awesome list about ActivityPub and Fediverse
 
 ## Projects
@@ -19,10 +19,11 @@ My awesome list about ActivityPub and Fediverse
   * https://github.com/gnh1201/SocialOnTheFile
 * ActivityPub over LoRaWAN (Proposal)
 
-## Tools
-* [relay.catswords.net](https://relay.catswords.net/) - ActivityPub Relay
+## Servers
+* [relay.catswords.net](https://relay.catswords.net/) - ActivityPub Relay Server
+* [catswords.social](https://catswords.social) - Mastodon server
 
-## 3rdparties
+## Softwares
 * [nginx](https://nginx.org/)
 * [Cloudflare WARP (Zero Trust)](https://one.one.one.one/)
   * You can benefit from improved data transfer (federation) speeds between different nodes.
