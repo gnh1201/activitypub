@@ -1,4 +1,6 @@
 # gnh1201/activitypub
+[![Discord chat](https://img.shields.io/discord/359930650330923008?logo=discord)](https://discord.gg/Q9MWa6bjGP)
+
 My awesome list about ActivityPub and Fediverse
 
 ## Projects
