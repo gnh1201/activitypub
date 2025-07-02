@@ -19,3 +19,10 @@ sub_filter 'www.youtube.com/' 'dnt-yt.catswords.net/';
 sub_filter 'youtu.be/' 'dnt-yt.catswords.net/';
 sub_filter 'www.youtu.be/' 'dnt-yt.catswords.net/';
 ```
+
+### Result
+Once you confirm that links to youtube.com or youtu.be are being replaced with links to the alternative frontend, the setup is complete.
+
+A real-world example of this implementation can be seen at the following link:
+
+https://catswords.social/@gnh1201/114784215434521357
