@@ -14,10 +14,10 @@ As of now, **Piped** is the project that is actively maintained and frequently u
 Once the alternative frontend has been set up, YouTube links can be rewritten using Nginx's **sub\_filter** feature. This prevents users from accessing the original YouTube links directly and instead encourages them to view the videos through the alternative frontend. For example:
 
 ```
-sub_filter 'youtube.com/' 'dnt-yt.catswords.net/';
 sub_filter 'www.youtube.com/' 'dnt-yt.catswords.net/';
-sub_filter 'youtu.be/' 'dnt-yt.catswords.net/';
+sub_filter 'youtube.com/' 'dnt-yt.catswords.net/';
 sub_filter 'www.youtu.be/' 'dnt-yt.catswords.net/';
+sub_filter 'youtu.be/' 'dnt-yt.catswords.net/';
 ```
 
 ### Result
