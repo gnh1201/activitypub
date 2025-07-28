@@ -44,7 +44,10 @@ My awesome list about ActivityPub and Fediverse
 * [Honeypots](honeypots.md)
 * [Image stocks](https://policy.catswords.social/stock_images.html)
 
-## Contact me
+## Report abuse
+* abuse@catswords.re.kr
+
+## Join our community
 * ActivityPub [@catswords_oss@catswords.social](https://catswords.social/@catswords_oss)
-* abuse@catswords.net
-* [Join Catswords on Microsoft Teams](https://teams.live.com/l/community/FEACHncAhq8ldnojAI)
+* [Join Catswords OSS #activitypub on Discord](https://discord.gg/Q9MWa6bjGP)
+* [Join Catswords OSS on Microsoft Teams](https://teams.live.com/l/community/FEACHncAhq8ldnojAI)
