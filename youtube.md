@@ -12,7 +12,7 @@ Instead of linking directly to YouTube, administrators can encourage the use of 
 
 * [**DNT-YT**](https://github.com/gnh1201/dnt-yt) (recommended — specifically designed for this scenario)
 * [Piped](https://github.com/TeamPiped/Piped)
-* [Invidious](https://github.com/TeamPiped/Piped)
+* [Invidious](https://github.com/iv-org/invidious)
 
 These frontends help reduce or eliminate tracking while preserving access to video content.
 
