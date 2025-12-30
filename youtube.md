@@ -35,4 +35,4 @@ Once you confirm that links to `youtube.com` or `youtu.be` are consistently repl
 
 A real-world example of this approach can be seen here:
 
-[https://catswords.social/@gnh1201/114784215434521357](https://catswords.social/@gnh1201/114784215434521357)
+https://catswords.social/@gnh1201/115801692643125819
