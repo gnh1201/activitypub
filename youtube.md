@@ -1,17 +1,26 @@
-## Potential Issues Stemming from YouTube Links Posted on ActivityPub Servers
-YouTube links posted on ActivityPub servers are often cited by users as a concern, due to technical methods that can be used to track visitors (e.g., the `si` parameter included in shared URLs, and various tracking technologies embedded in the YouTube website).
+## Preventing YouTube Tracking Links on ActivityPub Servers
 
-However, it seems unlikely that projects implementing the ActivityPub protocol will offer any solutions to this issue, as it is difficult to view it as a problem limited to a specific service like YouTube.
+YouTube links shared on ActivityPub servers are often cited by users as a privacy concern. This is due to various technical mechanisms that can be used to track visitors, such as the `si` parameter included in shared URLs and additional tracking technologies embedded in the YouTube website itself.
 
-That said, server administrators can still implement measures to help mitigate these concerns.
+In practice, it is unlikely that projects implementing the ActivityPub protocol will provide a built-in solution to this issue, as it is not a problem limited to a single service like YouTube but rather a broader web-tracking concern.
 
-### Use the alternative frontend
-To address this issue, one possible approach is to use so-called "alternative frontends" — independently developed frontends for YouTube. Well-known projects in this category include [**Piped**](https://github.com/TeamPiped/Piped) and [**Invidious**](https://github.com/iv-org/invidious).
+That said, server administrators can still take practical steps to mitigate these concerns at the server level.
 
-As of now, **Piped** is the project that is actively maintained and frequently updated with bug fixes.
+### 1. Use alternative YouTube frontends
 
-### Use the `sub_filter` on Nginx
-Once the alternative frontend has been set up, YouTube links can be rewritten using Nginx's **sub\_filter** feature. This prevents users from accessing the original YouTube links directly and instead encourages them to view the videos through the alternative frontend. For example:
+Instead of linking directly to YouTube, administrators can encourage the use of privacy-friendly alternative frontends:
+
+* [**DNT-YT**](https://github.com/gnh1201/dnt-yt) (recommended — specifically designed for this scenario)
+* [Piped](https://github.com/TeamPiped/Piped)
+* [Invidious](https://github.com/TeamPiped/Piped)
+
+These frontends help reduce or eliminate tracking while preserving access to video content.
+
+### 2. Rewrite links using Nginx `sub_filter`
+
+After setting up an alternative frontend, YouTube links can be rewritten transparently using Nginx’s **`sub_filter`** feature. This prevents users from accessing the original YouTube URLs directly and redirects them to the alternative frontend instead.
+
+Example configuration:
 
 ```
 sub_filter 'www.youtube.com/' 'dnt-yt.catswords.net/';
@@ -21,8 +30,9 @@ sub_filter 'youtu.be/' 'dnt-yt.catswords.net/';
 ```
 
 ### Result
-Once you confirm that links to youtube.com or youtu.be are being replaced with links to the alternative frontend, the setup is complete.
 
-A real-world example of this implementation can be seen at the following link:
+Once you confirm that links to `youtube.com` or `youtu.be` are consistently replaced with links to the alternative frontend, the configuration is complete.
 
-https://catswords.social/@gnh1201/114784215434521357
+A real-world example of this approach can be seen here:
+
+[https://catswords.social/@gnh1201/114784215434521357](https://catswords.social/@gnh1201/114784215434521357)
