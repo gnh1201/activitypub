@@ -10,9 +10,9 @@ That said, server administrators can still take practical steps to mitigate thes
 
 Instead of linking directly to YouTube, administrators can encourage the use of privacy-friendly alternative frontends:
 
-* [**DNT-YT**](https://github.com/gnh1201/dnt-yt) (recommended — specifically designed for this scenario)
-* [Piped](https://github.com/TeamPiped/Piped)
-* [Invidious](https://github.com/iv-org/invidious)
+* [**DNT-YT**](https://github.com/gnh1201/dnt-yt?utm_source=gnh1201) (recommended — specifically designed for this scenario)
+* [Piped](https://github.com/TeamPiped/Piped?utm_source=gnh1201)
+* [Invidious](https://github.com/iv-org/invidious?utm_source=gnh1201)
 
 These frontends help reduce or eliminate tracking while preserving access to video content.
 
@@ -35,4 +35,4 @@ Once you confirm that links to `youtube.com` or `youtu.be` are consistently repl
 
 A real-world example of this approach can be seen here:
 
-https://catswords.social/@gnh1201/115801692643125819
+[https://catswords.social/@gnh1201/115801692643125819](https://catswords.social/@gnh1201/115801692643125819?utm_source=gnh1201)
